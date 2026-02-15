@@ -22,7 +22,7 @@ const Head= ()=>{
    return()=>{
     clearTimeout(timer)
    }
-    },[searchQuery])
+    },[searchQuery,searchCache])
 
     const getSearchSuggestions= async()=>{
         const data= await fetch(YOUTUBE_SEARCH_API+searchQuery)
